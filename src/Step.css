@@ -38,6 +38,10 @@
   align-items: center;
 }
 
+.steps p {
+  cursor: pointer;
+}
+
 .message {
   width: 325px;
   height: 205px;

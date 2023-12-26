@@ -15,16 +15,36 @@ function Step() {
     <div className="wrap">
       <div className="step">
         <div className="steps">
-          <p className={step === 1 && "active"}>1</p>
-          <p className={step === 2 && "active"}>2</p>
-          <p className={step === 3 && "active"}>3</p>
-          <p className={step === 4 && "active"}>4</p>
-          <p className={step === 5 && "active"}>5</p>
-          <p className={step === 6 && "active"}>6</p>
-          <p className={step === 7 && "active"}>7</p>
-          <p className={step === 8 && "active"}>8</p>
-          <p className={step === 9 && "active"}>9</p>
-          <p className={step === 10 && "active"}>10</p>
+          <p className={step === 1 && "active"} onClick={() => setStep(1)}>
+            1
+          </p>
+          <p className={step === 2 && "active"} onClick={() => setStep(2)}>
+            2
+          </p>
+          <p className={step === 3 && "active"} onClick={() => setStep(3)}>
+            3
+          </p>
+          <p className={step === 4 && "active"} onClick={() => setStep(4)}>
+            4
+          </p>
+          <p className={step === 5 && "active"} onClick={() => setStep(5)}>
+            5
+          </p>
+          <p className={step === 6 && "active"} onClick={() => setStep(6)}>
+            6
+          </p>
+          <p className={step === 7 && "active"} onClick={() => setStep(7)}>
+            7
+          </p>
+          <p className={step === 8 && "active"} onClick={() => setStep(8)}>
+            8
+          </p>
+          <p className={step === 9 && "active"} onClick={() => setStep(9)}>
+            9
+          </p>
+          <p className={step === 10 && "active"} onClick={() => setStep(10)}>
+            10
+          </p>
         </div>
         <div className="message">
           <img src={`/${step}unsplash.jpg`} alt="" />
