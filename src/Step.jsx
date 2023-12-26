@@ -1,8 +1,6 @@
 import { useState } from "react";
 import "./Step.css";
 
-const messages = ["Hello World", "How are you?", "What are you doing?"];
-
 function Step() {
   const [step, setStep] = useState(1);
 
@@ -29,9 +27,6 @@ function Step() {
           <p className={step === 10 && "active"}>10</p>
         </div>
         <div className="message">
-          {/* <p>
-            Step {step}: {messages[step - 1]}
-          </p> */}
           <img src={`/${step}unsplash.jpg`} alt="" />
         </div>
         <div className="buttons">
