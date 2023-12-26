@@ -39,19 +39,26 @@
 }
 
 .message {
-  width: 100%;
+  width: 325px;
+  height: 205px;
+  margin: 15px auto;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px;
+  border: 5px solid #fff;
 }
 
 .message img {
   margin: 0 auto;
   width: 325px;
   height: 205px;
-  padding: 5px;
-  background: #fff;
+
+  transition: 0.3s ease all;
+}
+
+.message img:hover {
+  scale: calc(1.2);
 }
 
 .buttons {
