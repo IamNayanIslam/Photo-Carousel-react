@@ -8,7 +8,7 @@ const getImg = () => {
 
 function Step() {
   const [step, setStep] = useState(1);
-
+  const arr = new Array(10).fill(" ");
   const stepUp = () => {
     if (step < 10) setStep((prevStep) => prevStep + 1);
   };
@@ -20,18 +20,17 @@ function Step() {
     <div className="wrap">
       <div className="step">
         <div className="steps">
-          {Array.from({ length: 10 }, (_, i) => i + 1).map((num) => (
+          {arr.map((_, num) => (
             <p
               key={num}
-              className={step === num && "active"}
-              onClick={() => setStep(num)}
+              className={step === num + 1 && "active"}
+              onClick={() => setStep(num + 1)}
             >
-              {num}
+              {num + 1}
             </p>
           ))}
         </div>
         <div className="message">
-          {/* <img src={`/${step}unsplash.jpg`} alt="" /> */}
           <img src={getImg()} alt="" />
         </div>
         <div className="buttons">
