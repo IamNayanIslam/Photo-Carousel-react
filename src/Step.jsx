@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./Step.css";
 
+const getImg = () => {
+  const id = Math.round(Math.random() * 200) + 1;
+  return `https://picsum.photos/id/${id}/500/500`;
+};
+
 function Step() {
   const [step, setStep] = useState(1);
 
@@ -47,7 +52,8 @@ function Step() {
           </p>
         </div>
         <div className="message">
-          <img src={`/${step}unsplash.jpg`} alt="" />
+          {/* <img src={`/${step}unsplash.jpg`} alt="" /> */}
+          <img src={getImg()} alt="" />
         </div>
         <div className="buttons">
           <button onClick={stepDown}>Previous</button>
