@@ -10,7 +10,11 @@ function Step() {
   const [step, setStep] = useState(1);
   const arr = new Array(10).fill(" ");
   const stepUp = () => {
-    if (step < 10) setStep((prevStep) => prevStep + 1);
+    if (step < 10) {
+      setStep((prevStep) => prevStep + 1);
+    } else {
+      setStep(1);
+    }
   };
 
   const stepDown = () => {
